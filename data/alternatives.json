@@ -1,0 +1,580 @@
+{
+  "site": {
+    "name": "FossForThat",
+    "tagline": "Open-source & self-hosted swaps for every paid AI tool",
+    "description": "A living directory of open-source and self-hosted alternatives to popular paid AI tools \u2014 with install difficulty, hardware notes, licenses, and what you lose versus the paid version.",
+    "url_base": "https://quser01.github.io/fossforthat",
+    "data_fetched_at": "2026-11-09T20:12:19Z",
+    "data_fetched_date": "2026-11-09"
+  },
+  "tools": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "vendor": "OpenAI",
+      "category": "chat",
+      "summary": "Hosted conversational AI with web browsing, memory, voice, and apps.",
+      "alternatives": [
+        {
+          "name": "Open WebUI",
+          "github": "open-webui/open-webui",
+          "url": "https://github.com/open-webui/open-webui",
+          "homepage": "https://openwebui.com",
+          "license": "custom (Open WebUI License \u2014 see repo)",
+          "stars": 158225,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (needs a separate LLM runtime such as Ollama)",
+          "what_you_lose": "No OpenAI-managed models, voice mode, or mobile apps out of the box; you operate the stack and pick models yourself.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "LibreChat",
+          "github": "LibreChat-AI/LibreChat",
+          "url": "https://github.com/LibreChat-AI/LibreChat",
+          "homepage": "https://librechat.ai/",
+          "license": "MIT",
+          "stars": 46908,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published",
+          "what_you_lose": "More setup than ChatGPT; multi-user auth and agents need configuration. Hosted OpenAI-quality models still cost API spend unless you run local weights.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "midjourney",
+      "name": "Midjourney",
+      "vendor": "Midjourney",
+      "category": "image",
+      "summary": "Hosted text-to-image with a curated aesthetic and Discord/web workflow.",
+      "alternatives": [
+        {
+          "name": "ComfyUI",
+          "github": "Comfy-Org/ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "homepage": "https://www.comfy.org/",
+          "license": "GPL-3.0",
+          "stars": 145974,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "hard",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published by the UI; image models typically need a CUDA GPU (VRAM depends on the checkpoint)",
+          "what_you_lose": "No Midjourney house style or Discord bot workflow; node graphs have a steep learning curve; model licenses vary (some non-commercial).",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "InvokeAI",
+          "github": "invoke-ai/InvokeAI",
+          "url": "https://github.com/invoke-ai/InvokeAI",
+          "homepage": "https://invoke.ai",
+          "license": "Apache-2.0",
+          "stars": 29045,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (GPU recommended for diffusion models)",
+          "what_you_lose": "Less 'one prompt, polished poster' than Midjourney; you manage models, VRAM, and workflows yourself.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "GitHub / Microsoft",
+      "category": "coding",
+      "summary": "IDE coding assistant with chat, completions, and cloud agents.",
+      "alternatives": [
+        {
+          "name": "Continue",
+          "github": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue",
+          "homepage": "https://continue.dev",
+          "license": "Apache-2.0",
+          "stars": 36446,
+          "last_commit": "2026-11-05",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (extension; model/hardware depends on the backend you configure)",
+          "what_you_lose": "No GitHub-hosted Copilot models or issue-to-PR cloud agent; quality tracks whatever local or API model you wire up.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Cline",
+          "github": "cline/cline",
+          "url": "https://github.com/cline/cline",
+          "homepage": "https://cline.bot",
+          "license": "Apache-2.0",
+          "stars": 71463,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (extension; model/hardware depends on backend)",
+          "what_you_lose": "Agentic edits need careful review; no Copilot Business admin/policy surface; you pay for or self-host the model.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Tabby",
+          "github": "TabbyML/tabby",
+          "url": "https://github.com/TabbyML/tabby",
+          "homepage": "https://tabbyml.com",
+          "license": "custom / mixed (see repo; ee/ may differ)",
+          "stars": 33929,
+          "last_commit": "2026-06-30",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published",
+          "what_you_lose": "Self-hosted completion server for teams; release cadence has slowed; license is mixed (see repo, including ee/).",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "vendor": "Anysphere",
+      "category": "coding",
+      "summary": "AI-native code editor with agents, codebase chat, and tab complete.",
+      "alternatives": [
+        {
+          "name": "Continue",
+          "github": "continuedev/continue",
+          "url": "https://github.com/continuedev/continue",
+          "homepage": "https://continue.dev",
+          "license": "Apache-2.0",
+          "stars": 36446,
+          "last_commit": "2026-11-05",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (runs inside VS Code / JetBrains)",
+          "what_you_lose": "Not a full Cursor fork \u2014 you keep your existing IDE; fewer polished agent UX features than Cursor's product.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Cline",
+          "github": "cline/cline",
+          "url": "https://github.com/cline/cline",
+          "homepage": "https://cline.bot",
+          "license": "Apache-2.0",
+          "stars": 71463,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published",
+          "what_you_lose": "VS Code extension rather than a dedicated IDE; multi-file agent behavior and pricing differ from Cursor Ultra.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Aider",
+          "github": "Aider-AI/aider",
+          "url": "https://github.com/Aider-AI/aider",
+          "homepage": "https://aider.chat/",
+          "license": "Apache-2.0",
+          "stars": 50035,
+          "last_commit": "2026-05-22",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (CLI; model-dependent)",
+          "what_you_lose": "Terminal pair-programmer, not a GUI IDE; last repo push as of fetch was 2026-05-22 \u2014 verify maintenance before adopting.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "jasper",
+      "name": "Jasper",
+      "vendor": "Jasper",
+      "category": "writing",
+      "summary": "Hosted AI copywriting for marketing teams with brand voice and templates.",
+      "alternatives": [
+        {
+          "name": "textgen (oobabooga)",
+          "github": "oobabooga/textgen",
+          "url": "https://github.com/oobabooga/textgen",
+          "homepage": null,
+          "license": "AGPL-3.0",
+          "stars": 47732,
+          "last_commit": "2026-08-17",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (local LLM desktop app; VRAM/RAM depend on model)",
+          "what_you_lose": "No Jasper brand-voice product, campaign templates, or team workspace; you build prompts and templates yourself.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Open WebUI",
+          "github": "open-webui/open-webui",
+          "url": "https://github.com/open-webui/open-webui",
+          "homepage": "https://openwebui.com",
+          "license": "custom (Open WebUI License \u2014 see repo)",
+          "stars": 158225,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (needs a separate LLM runtime)",
+          "what_you_lose": "General chat UI rather than a marketing suite; no Jasper-style brand kit or multi-channel campaign builder.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "notion-ai",
+      "name": "Notion AI",
+      "vendor": "Notion",
+      "category": "knowledge",
+      "summary": "AI writing and Q&A embedded inside Notion workspaces.",
+      "alternatives": [
+        {
+          "name": "AnythingLLM",
+          "github": "Mintplex-Labs/anything-llm",
+          "url": "https://github.com/Mintplex-Labs/anything-llm",
+          "homepage": "https://anythingllm.com",
+          "license": "MIT",
+          "stars": 68110,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (desktop or Docker; plus an LLM)",
+          "what_you_lose": "Does not live inside Notion; you import/sync docs yourself and lose Notion's native editor UX.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Onyx",
+          "github": "onyx-dot-app/onyx",
+          "url": "https://github.com/onyx-dot-app/onyx",
+          "homepage": "https://onyx.app",
+          "license": "custom (see repo LICENSE)",
+          "stars": 33302,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "hard",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published",
+          "what_you_lose": "Heavier enterprise-oriented deploy; some connectors/features may be gated \u2014 check current docs. Not embedded in Notion.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Khoj",
+          "github": "khoj-ai/khoj",
+          "url": "https://github.com/khoj-ai/khoj",
+          "homepage": "https://khoj.dev",
+          "license": "AGPL-3.0",
+          "stars": 38091,
+          "last_commit": "2026-08-02",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published",
+          "what_you_lose": "AGPL copyleft; personal second-brain focus rather than Notion's collaborative docs UI.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "vendor": "ElevenLabs",
+      "category": "audio",
+      "summary": "Hosted TTS, voice cloning, and dubbing studio.",
+      "alternatives": [
+        {
+          "name": "Chatterbox",
+          "github": "resemble-ai/chatterbox",
+          "url": "https://github.com/resemble-ai/chatterbox",
+          "homepage": "https://resemble-ai.github.io/chatterbox_demopage/",
+          "license": "MIT",
+          "stars": 27713,
+          "last_commit": "2026-11-04",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (consumer GPU typical for cloning; confirm in project docs)",
+          "what_you_lose": "No ElevenLabs voice library, dubbing studio, or managed uptime; generated audio may include Resemble Perth watermarking.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Kokoro",
+          "github": "hexgrad/kokoro",
+          "url": "https://github.com/hexgrad/kokoro",
+          "homepage": null,
+          "license": "Apache-2.0",
+          "stars": 10014,
+          "last_commit": "2025-08-06",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "CPU-capable per project README (82M model); GPU optional",
+          "what_you_lose": "Preset voices only \u2014 no voice cloning by design; smaller model than ElevenLabs flagship quality for some accents.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "Piper",
+          "github": "rhasspy/piper",
+          "url": "https://github.com/rhasspy/piper",
+          "homepage": "https://rhasspy.github.io/piper-samples/",
+          "license": "MIT",
+          "stars": 11321,
+          "last_commit": "2025-08-26",
+          "install_difficulty": "easy",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (designed for on-device / CPU TTS)",
+          "what_you_lose": "Fast local TTS for assistants; fewer studio/cloning features than ElevenLabs.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "otter",
+      "name": "Otter",
+      "vendor": "Otter.ai",
+      "category": "audio",
+      "summary": "Meeting transcription with summaries and calendar bots.",
+      "alternatives": [
+        {
+          "name": "OpenAI Whisper",
+          "github": "openai/whisper",
+          "url": "https://github.com/openai/whisper",
+          "homepage": null,
+          "license": "MIT",
+          "stars": 112300,
+          "last_commit": "2026-08-31",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (CPU works; GPU speeds large models)",
+          "what_you_lose": "Library/CLI, not a meeting bot \u2014 no auto-join Zoom/Meet, speaker notes product, or Otter collaboration UI.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "WhisperX",
+          "github": "m-bain/whisperX",
+          "url": "https://github.com/m-bain/whisperX",
+          "homepage": null,
+          "license": "BSD-2-Clause",
+          "stars": 25177,
+          "last_commit": "2026-10-22",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (GPU recommended for speed; diarization may have extra model terms)",
+          "what_you_lose": "Better timestamps/diarization than stock Whisper, still not a meeting assistant with calendar bots.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "whisper.cpp",
+          "github": "ggml-org/whisper.cpp",
+          "url": "https://github.com/ggml-org/whisper.cpp",
+          "homepage": null,
+          "license": "MIT",
+          "stars": 55046,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (CPU-friendly C/C++ port)",
+          "what_you_lose": "Efficient local ASR engine only \u2014 you build the meeting workflow around it.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity",
+      "category": "search",
+      "summary": "AI answer engine with cited web search.",
+      "alternatives": [
+        {
+          "name": "Vane (formerly Perplexica)",
+          "github": "ItzCrazyKns/Vane",
+          "url": "https://github.com/ItzCrazyKns/Vane",
+          "homepage": null,
+          "license": "MIT",
+          "stars": 38125,
+          "last_commit": "2026-09-01",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published",
+          "what_you_lose": "Search quality depends on SearxNG and the LLM you attach; no Perplexity proprietary index or Pro model lineup.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "GPT Researcher",
+          "github": "assafelovic/gpt-researcher",
+          "url": "https://github.com/assafelovic/gpt-researcher",
+          "homepage": "https://gptr.dev",
+          "license": "Apache-2.0",
+          "stars": 30599,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (docs mention modest server needs in community guides; treat as not published by us unless verified in upstream README)",
+          "what_you_lose": "Report-oriented research agent rather than a polished daily search chat UX.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "vendor": "Runway",
+      "category": "video",
+      "summary": "Hosted AI video generation and editing suite.",
+      "alternatives": [
+        {
+          "name": "Wan2.2",
+          "github": "Wan-Video/Wan2.2",
+          "url": "https://github.com/Wan-Video/Wan2.2",
+          "homepage": "https://wan.video",
+          "license": "Apache-2.0",
+          "stars": 18490,
+          "last_commit": "2026-09-21",
+          "install_difficulty": "hard",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (large video models; high VRAM typical \u2014 check model cards)",
+          "what_you_lose": "Model weights + research code, not Runway's editing suite; slow iteration and ops burden vs hosted Gen-3/4.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "LTX-Video",
+          "github": "Lightricks/LTX-Video",
+          "url": "https://github.com/Lightricks/LTX-Video",
+          "homepage": "https://ltx.io/model",
+          "license": "Apache-2.0",
+          "stars": 11348,
+          "last_commit": "2026-11-02",
+          "install_difficulty": "hard",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (check model card for VRAM; commercial terms may include revenue caps)",
+          "what_you_lose": "Open video model rather than a full creative suite; license/revenue terms need a careful read.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "ComfyUI",
+          "github": "Comfy-Org/ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "homepage": "https://www.comfy.org/",
+          "license": "GPL-3.0",
+          "stars": 145974,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "hard",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (video workflows need substantial VRAM)",
+          "what_you_lose": "Flexible node UI for open video models, but no Runway timeline editor or hosted speed.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "grammarly",
+      "name": "Grammarly",
+      "vendor": "Grammarly",
+      "category": "writing",
+      "summary": "Writing assistant for grammar, tone, and clarity across apps.",
+      "alternatives": [
+        {
+          "name": "LanguageTool",
+          "github": "languagetool-org/languagetool",
+          "url": "https://github.com/languagetool-org/languagetool",
+          "homepage": "https://languagetool.org",
+          "license": "LGPL-2.1",
+          "stars": 15241,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (self-hosted server; n-gram data optional and large)",
+          "what_you_lose": "Rule-based core is weaker than Grammarly Premium tone/rewrite AI; premium cloud features aren't in the open core.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    },
+    {
+      "id": "dall-e",
+      "name": "DALL\u00b7E",
+      "vendor": "OpenAI",
+      "category": "image",
+      "summary": "Hosted image generation via ChatGPT and the OpenAI API.",
+      "alternatives": [
+        {
+          "name": "Stable Diffusion WebUI",
+          "github": "AUTOMATIC1111/stable-diffusion-webui",
+          "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
+          "homepage": null,
+          "license": "AGPL-3.0",
+          "stars": 165270,
+          "last_commit": "2026-03-02",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (NVIDIA GPU typical; VRAM depends on model)",
+          "what_you_lose": "Maintenance activity has slowed (last push 2026-03-02 as of fetch); no DALL\u00b7E 3 ChatGPT integration or OpenAI content policy stack.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "ComfyUI",
+          "github": "Comfy-Org/ComfyUI",
+          "url": "https://github.com/Comfy-Org/ComfyUI",
+          "homepage": "https://www.comfy.org/",
+          "license": "GPL-3.0",
+          "stars": 145974,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "hard",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (GPU VRAM depends on checkpoint)",
+          "what_you_lose": "More powerful and modular, steeper learning curve; you manage models and safety filters yourself.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        },
+        {
+          "name": "InvokeAI",
+          "github": "invoke-ai/InvokeAI",
+          "url": "https://github.com/invoke-ai/InvokeAI",
+          "homepage": "https://invoke.ai",
+          "license": "Apache-2.0",
+          "stars": 29045,
+          "last_commit": "2026-11-09",
+          "install_difficulty": "medium",
+          "install_difficulty_label": "our estimate",
+          "minimum_hardware": "not published (GPU recommended)",
+          "what_you_lose": "Canvas-oriented local studio; quality depends on which open checkpoints you install.",
+          "what_you_lose_label": "our assessment",
+          "stats_fetched_at": "2026-11-09T20:12:19Z"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    "audio",
+    "chat",
+    "coding",
+    "image",
+    "knowledge",
+    "search",
+    "video",
+    "writing"
+  ]
+}

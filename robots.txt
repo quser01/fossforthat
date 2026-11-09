@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quser01.github.io/fossforthat/sitemap.xml
