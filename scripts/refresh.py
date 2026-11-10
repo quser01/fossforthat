@@ -89,16 +89,25 @@ def main():
                     cache[key] = refresh_repo(key)
                     time.sleep(DELAY)
                 info = cache[key]
+                # Fields in alt["locked_fields"] hold hand-verified editorial
+                # values (custom license summaries, corrected homepages). Never overwrite.
+                locked = set(alt.get("locked_fields") or [])
+                def set_field(field, value):
+                    if field in locked:
+                        if alt.get(field) != value:
+                            print(f"\n  keeping editorial {field} for {alt.get('name')}: {alt.get(field)!r} (GitHub: {value!r})", end=" ")
+                        return
+                    alt[field] = value
                 if isinstance(info.get("stars"), int):
-                    alt["stars"] = info["stars"]
+                    set_field("stars", info["stars"])
                 if info.get("license"):
-                    alt["license"] = info["license"]
+                    set_field("license", info["license"])
                 if info.get("last_commit"):
-                    alt["last_commit"] = info["last_commit"]
+                    set_field("last_commit", info["last_commit"])
                 if info.get("url"):
-                    alt["url"] = info["url"]
+                    set_field("url", info["url"])
                 if info.get("homepage"):
-                    alt["homepage"] = info["homepage"]
+                    set_field("homepage", info["homepage"])
                 alt["stats_fetched_at"] = fetched_at
                 updated += 1
                 print(f"OK ({info['source']}) {alt.get('stars')}★ {alt.get('last_commit')}")

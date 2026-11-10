@@ -111,12 +111,24 @@ async function main() {
           seen.set(key, info);
           await sleep(DELAY_MS);
         }
-        if (typeof info.stars === "number") alt.stars = info.stars;
-        else if (info.stars == null) alt.stars = alt.stars ?? null; // keep prior if fallback failed to parse
-        if (info.license) alt.license = info.license;
-        if (info.last_commit) alt.last_commit = info.last_commit;
-        if (info.url) alt.url = info.url;
-        if (info.homepage) alt.homepage = info.homepage;
+        // Fields listed in alt.locked_fields hold hand-verified editorial values
+        // (e.g. a custom license summary GitHub reports as NOASSERTION, or a
+        // homepage whose GitHub value is stale). Never overwrite them.
+        const locked = new Set(Array.isArray(alt.locked_fields) ? alt.locked_fields : []);
+        const setField = (field, value) => {
+          if (locked.has(field)) {
+            if (alt[field] !== value) {
+              console.log(`  keeping editorial ${field} for ${alt.name}: ${JSON.stringify(alt[field])} (GitHub: ${JSON.stringify(value)})`);
+            }
+            return;
+          }
+          alt[field] = value;
+        };
+        if (typeof info.stars === "number") setField("stars", info.stars);
+        if (info.license) setField("license", info.license);
+        if (info.last_commit) setField("last_commit", info.last_commit);
+        if (info.url) setField("url", info.url);
+        if (info.homepage) setField("homepage", info.homepage);
         alt.stats_fetched_at = fetchedAt;
         updated += 1;
         console.log(`OK (${info.source}) ${alt.stars}★ ${alt.last_commit}`);
