@@ -326,18 +326,18 @@
         },
         {
           "name": "Piper",
-          "github": "rhasspy/piper",
-          "url": "https://github.com/rhasspy/piper",
-          "homepage": "https://rhasspy.github.io/piper-samples/",
-          "license": "MIT",
-          "stars": 11321,
-          "last_commit": "2025-08-26",
+          "github": "OHF-Voice/piper1-gpl",
+          "url": "https://github.com/OHF-Voice/piper1-gpl",
+          "homepage": null,
+          "license": "GPL-3.0",
+          "stars": 6235,
+          "last_commit": "2026-11-09",
           "install_difficulty": "easy",
           "install_difficulty_label": "our estimate",
           "minimum_hardware": "not published (designed for on-device / CPU TTS)",
           "what_you_lose": "Fast local TTS for assistants; fewer studio/cloning features than ElevenLabs.",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T07:10:31.286Z"
         }
       ]
     },
