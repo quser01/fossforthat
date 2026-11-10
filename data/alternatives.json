@@ -28,7 +28,11 @@
           "minimum_hardware": "not published (needs a separate LLM runtime such as Ollama)",
           "what_you_lose": "No OpenAI-managed models, voice mode, or mobile apps out of the box; you operate the stack and pick models yourself.",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T06:53:48.136Z",
+          "locked_fields": [
+            "license"
+          ],
+          "locked_reason": "GitHub reports NOASSERTION; LICENSE file is the custom 'Open WebUI License' (verified 2026-11-10)."
         },
         {
           "name": "LibreChat",
@@ -82,7 +86,11 @@
           "minimum_hardware": "not published (GPU recommended for diffusion models)",
           "what_you_lose": "Less 'one prompt, polished poster' than Midjourney; you manage models, VRAM, and workflows yourself.",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T06:53:48.136Z",
+          "locked_fields": [
+            "homepage"
+          ],
+          "locked_reason": "GitHub homepage https://invoke-ai.github.io/InvokeAI/ redirects to http://invoke.ai and returned HTTP 500; https://invoke.ai returns 200 (verified 2026-11-10)."
         }
       ]
     },
@@ -136,7 +144,11 @@
           "minimum_hardware": "not published",
           "what_you_lose": "Self-hosted completion server for teams; release cadence has slowed; license is mixed (see repo, including ee/).",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T06:53:48.136Z",
+          "locked_fields": [
+            "license"
+          ],
+          "locked_reason": "GitHub reports NOASSERTION; LICENSE is Apache-2.0 except ee/ directory under a separate license (verified 2026-11-10)."
         }
       ]
     },
@@ -229,7 +241,11 @@
           "minimum_hardware": "not published (needs a separate LLM runtime)",
           "what_you_lose": "General chat UI rather than a marketing suite; no Jasper-style brand kit or multi-channel campaign builder.",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T06:53:48.136Z",
+          "locked_fields": [
+            "license"
+          ],
+          "locked_reason": "GitHub reports NOASSERTION; LICENSE file is the custom 'Open WebUI License' (verified 2026-11-10)."
         }
       ]
     },
@@ -268,7 +284,11 @@
           "minimum_hardware": "not published",
           "what_you_lose": "Heavier enterprise-oriented deploy; some connectors/features may be gated — check current docs. Not embedded in Notion.",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T06:53:48.136Z",
+          "locked_fields": [
+            "license"
+          ],
+          "locked_reason": "GitHub reports NOASSERTION; LICENSE is MIT Expat except ee directories under the Onyx Enterprise License (verified 2026-11-10)."
         },
         {
           "name": "Khoj",
@@ -562,7 +582,11 @@
           "minimum_hardware": "not published (GPU recommended)",
           "what_you_lose": "Canvas-oriented local studio; quality depends on which open checkpoints you install.",
           "what_you_lose_label": "our assessment",
-          "stats_fetched_at": "2026-11-10T06:53:48.136Z"
+          "stats_fetched_at": "2026-11-10T06:53:48.136Z",
+          "locked_fields": [
+            "homepage"
+          ],
+          "locked_reason": "GitHub homepage https://invoke-ai.github.io/InvokeAI/ redirects to http://invoke.ai and returned HTTP 500; https://invoke.ai returns 200 (verified 2026-11-10)."
         }
       ]
     }

@@ -398,6 +398,7 @@ python3 scripts/build.py
 - Install difficulty = our estimate
 - “What you lose” = our assessment
 - Stars / license / last commit from public GitHub API (see `data/alternatives.json` → `stats_fetched_at`)
+- Editorial overrides: list field names in an alternative's `locked_fields` (e.g. `["license"]`) and the refresh scripts will never overwrite them; `locked_reason` says why
 - Newsletter & submit are **coming soon** placeholders (not working forms)
 - Do not invent prices on the sponsor page
 """)
